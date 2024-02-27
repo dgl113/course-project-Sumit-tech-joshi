@@ -1,7 +1,17 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/swIBozRZ)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-7f7980b617ed060a017424585567c406b6ee15c891e84e1186181d67ecf80aa0.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=14012911)
-# DGL113 Course Project
-1. This is the initial DGL113 project repository readme file. When you view this file, it means you have accepted the project and cloned the initial repository. There is no starting file other than this readme for the project. You will create your own files based on your proposal and design, add them to the docs/ folder, then push your work back to GitHub.
-1. Write your project proposal directly in this file in the section below. At a minimum, you should describe what a website you are going to work on and the 3 features that you plan to implement. See the project description on Brightspace for more details.
-1. <b>This part of the project is due Mon. Feb. 26 at 11:59pm.</b>
-## Project Proposal
+# DGL113 Course Project: Project Proposal
+
+
+## Project Overview:
+
+Jim’s Clothes, a well-established clothing shopping destination for men, has been catering to fashion needs for over 50 years. With five physical locations across British Columbia and a thriving online store, Jim’s Clothes Closet aims to provide a seamless shopping experience. Currently, the website predominantly features static content displaying product details for shopping. The objective is to enhance functionality by introducing interactive elements through JavaScript, thereby making the website more dynamic and engaging for users.
+
+## Features to implement:
+
+### Search and Filter for Products:
+Implement a robust search and filter functionality to streamline the product discovery process. Users will be able to easily navigate through the extensive product range based on categories, sizes, styles, and other relevant filters. This feature aims to enhance user experience by providing efficient product exploration.
+
+### Google Form Integration for Measurement Form:
+Integrate Google Forms to facilitate the scheduling of appointments for personalized fittings. Users can easily access and submit a measurement form, allowing Jim’s Clothes staff to provide tailored assistance and recommend custom suits based on individual preferences. This feature emphasizes convenience and personalized service.
+
+### JSON Data Integration for Product Details:
+Utilize JSON data to dynamically showcase product details on the website. The JSON file will contain structured information such as title, description, image URL, and price for each product. By fetching and displaying this data dynamically, the website ensures real-time updates and efficient management of the product catalog.
