@@ -1,0 +1,1061 @@
+/* Resetting default font size to 62.5% for easier rem calculations */
+html {
+  font-size: 62.5%;
+}
+
+/* Applying box-sizing to all elements for consistent sizing calculations */
+* {
+  box-sizing: border-box;
+}
+
+/* Setting a base font family, size, and margin for the body */
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+/* Styling for headings */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #201f1f;
+}
+
+/* Specific styling for h3 elements */
+h3 {
+  margin: 5% 10%;
+}
+
+/* Adding a class for a margin-top of 10% */
+.margin-top-ten {
+  margin: 10% 0;
+}
+
+/* Styling for h1 elements */
+h1 {
+  font-size: 3rem;
+}
+
+/* Styling for h2 elements */
+h2 {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+/* Styling for h4 elements */
+h4 {
+  font-size: 2rem;
+}
+
+/* Styling for anchor links */
+a {
+  font-size: 2rem;
+}
+
+/* Header styling */
+header {
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2% 10%;
+  height: 50px;
+  position: fixed;
+  color: #fff;
+  z-index: 1;
+}
+
+/* Adjusting main content padding to accommodate the fixed header */
+main {
+  padding-top: 50px;
+}
+
+/* Styling for hero section header */
+.section-hero__header {
+  background-image: url("images/background-home.png");
+  background-repeat: no-repeat;
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+  background-color: #140f0e;
+  display: flex;
+  justify-content: center;
+  padding-left: 2%;
+  flex-direction: column;
+}
+
+/* Specific styling for h1 within hero section */
+.section-hero__header h1 {
+  color: #222;
+  font-size: 6rem;
+  display: block;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Specific styling for p within hero section */
+.section-hero__header p {
+  color: #222;
+  background-color: #fff;
+  font-size: 1.6rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Styling for logo within header */
+header img {
+  width: 15%;
+  cursor: pointer;
+}
+
+/* Styling for navigation menu */
+.nav-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Styling for navigation menu */
+nav {
+  text-align: right;
+}
+
+/* Styling for navigation menu ul */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+/* Styling for navigation menu li */
+nav li {
+  padding-top: 6px;
+  margin: 14px 16px;
+}
+
+/* Styling for navigation menu links */
+nav a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3rem;
+  transition: all 0.5s ease-out;
+  padding: 5px;
+}
+
+/* Styling for navigation menu links on hover */
+nav a:hover {
+  font-size: 2.3rem;
+  background-color: #ddd;
+  color: #201f1f;
+}
+
+/* Styling for login link */
+.login-link {
+  display: none;
+}
+
+/* Styling for items in a list */
+.show-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid;
+  padding: 8px;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  height: 100vh;
+  background-color: black;
+  width: 100%;
+}
+
+/* Styling for buttons */
+.button-class {
+  color: #ffffff;
+  background-color: #505d68;
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 12px 40px;
+  border-radius: 6px;
+}
+
+/* Styling for product section articles */
+.section-product article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Styling for product section articles on hover */
+.section-product article:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for product section images */
+.section-product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  max-height: 200px;
+}
+
+/* Styling for product section h2 */
+.section-product h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Styling for product section p */
+.section-product p {
+  margin: 10px 0;
+  color: #666;
+}
+
+/* Styling for product section paragraph with price */
+.para-section-product__para-price {
+  font-weight: bold;
+  color: #e44d26;
+}
+
+/* Styling for brand section */
+.section-brand {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+/* Styling for brand section image wrapper */
+.section-brand__img-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styling for brand section images */
+.section-brand__img-wrapper img {
+  width: 49%;
+}
+
+/* Styling for the call to action section */
+.section-call_to_action {
+  text-align: center;
+  padding: 10px;
+  background-image: url("images/background-call-to-action.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* Styling for the text area within the call to action section */
+.section-call_to_action__textarea h2 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Styling for paragraphs within the text area of the call to action section */
+.section-call_to_action__textarea p {
+  background-color: #fff;
+  padding: 10px;
+}
+
+/* Styling for the text area in the call to action section */
+.section-call_to_action__textarea {
+  max-width: 1070px;
+  margin: 0 auto;
+}
+
+/* Styling for h2 elements */
+.h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+/* Styling for product section's h2 elements */
+.section-product h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+/* Styling for the button wrapper in the call to action section */
+.section-call_to_action__Button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for links within the button wrapper */
+.section-call_to_action__Button-wrapper a {
+  display: block;
+  padding: 16px 20px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #eb5e28;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px #eb5e28;
+  width: 275px;
+  margin-top: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Styling for links within the button wrapper on hover */
+.section-call_to_action__Button-wrapper a:hover {
+  background-color: #222;
+  box-shadow: 0 4px 8px #222;
+}
+
+/* Styling for the div containing history information */
+.section-call_to_action__div-history {
+  text-align: center;
+}
+
+/* Styling for images within the history div */
+.section-call_to_action__div-history img {
+  width: 100%;
+}
+
+/* Styling for the footer address wrapper */
+.footer-address__wrapper {
+  text-align: center;
+  border-top: 1px solid;
+  padding: 10px;
+}
+
+/* Styling for the outer footer address */
+.footer-address-outer {
+  background-color: #e4e4e4;
+  color: #222;
+  padding: 0px 50px;
+  text-align: center;
+}
+
+/* Styling for h3 elements within the footer address wrapper */
+.footer-address__wrapper h3 {
+  text-transform: uppercase;
+}
+
+/* Styling for social icons within the footer address */
+.footer-address__social-icons i {
+  font-size: 3rem;
+  padding: 16px;
+}
+
+/* Styling for the copyright section within the footer */
+.footer-address__copyright {
+  background-color: #222222;
+  color: #fff;
+  margin: 0;
+  padding: 16px;
+  text-align: center;
+}
+
+/* Hiding iframes in the document */
+iframe {
+  display: none;
+}
+
+/* Styling for the detail header of the custom suit section */
+.section-custom-suit__detail-header {
+  background-image: url("images/background-custom-suit.webp");
+  text-align: center;
+  padding: 5%;
+  height: 75vh;
+  background-attachment: fixed;
+  display: flex;
+  align-items: flex-end;
+  color: #ddd;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Styling for the table container section */
+section.table-container {
+  text-align: center;
+}
+
+/* Styling for h2 elements within the table container section */
+section.table-container h2 {
+  text-transform: uppercase;
+  margin: 5% auto;
+}
+
+/* Styling for the "load more" button in the product section */
+.section-product__load-more {
+  display: inline-block;
+  color: #fff;
+  background-color: #222;
+  font-size: 2rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Styling for the product section */
+.section-product {
+  text-align: center;
+}
+
+/* Styling for the video container in the shopping section */
+.section-shopping__video-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Styling for the shop video in the shopping section */
+video.section-shopping__shop-video {
+  position: absolute;
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Styling for the overlay in the shopping section */
+.section-shopping__shop-video__overlay {
+  position: absolute;
+  width: 100%;
+  height: 75vh;
+  background-color: rgb(96 95 95 / 50%);
+}
+
+/* Styling for the text overlay in the shopping section */
+.section-shopping__shop-video-text-overlay {
+  height: 60vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 15% 10%;
+  text-align: center;
+}
+
+/* Styling for h1 elements in the text overlay of the shopping section */
+.section-shopping__shop-video-text-overlay h1 {
+  background: #000 none repeat scroll 0 0;
+  color: #fff;
+  font-weight: 600;
+  margin: 2rem 3rem 0;
+  mix-blend-mode: overlay;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+/* Styling for information paragraphs in the shopping section */
+.section-shopping__info h3 {
+  text-align: center;
+  padding: 10%;
+  font-weight: bolder;
+  border-bottom: 2px solid #ff8001;
+}
+
+/* Styling for the desktop video section in the shopping section */
+#section-shopping__desktop-video {
+  display: none;
+}
+
+/* Styling for tables */
+table {
+  width: 80%;
+  margin: 50px auto;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Light yellow background */
+}
+
+/* Styling for th and td elements in tables */
+th,
+td {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Styling for th elements in tables */
+th {
+  background-color: #252422; /* Pitch Black */
+  color: #fffcf2; /* Light yellow text */
+}
+
+/* Styling for even rows in tables */
+tr:nth-child(even) {
+  background-color: #ccc5b9; /* Light brown */
+}
+
+/* Styling for odd rows in tables */
+tr:nth-child(odd) {
+  background-color: #fff; /* Light yellow background for odd rows */
+}
+
+/* Styling for td elements in tables */
+td {
+  color: #252422; /* Pitch Black text */
+}
+
+/* Styling for th and td borders in tables */
+th,
+td {
+  border: 1px solid #ccc5b9; /* Light brown border */
+}
+
+/* Styling for h1 elements within table containers */
+.table-container h1 {
+  text-align: center;
+  color: #252422;
+}
+
+/* Styling for the detail services section of the custom suit */
+.section-custom-suit__detail-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Styling for li elements in the detail services section of the custom suit */
+.section-custom-suit__detail-services li {
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  margin: 8%;
+  background-color: #d7d7d7;
+}
+
+/* Styling for span elements within li elements of the detail services section */
+.section-custom-suit__detail-services li span {
+  border-radius: 50%;
+  background-color: #eb5e28;
+  color: #fff;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  padding: 6px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* Styling for h1 elements in the detail header of the custom suit */
+.section-custom-suit__detail-header h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid;
+}
+
+/* Styling for h2 elements within the form container */
+.form-container h2 {
+  text-transform: uppercase;
+}
+
+/* Styling for h3 elements within the features section */
+.section-features h3 {
+  text-transform: uppercase;
+}
+
+/* Styling for the video container in the features section */
+.section-features__video-container {
+  position: relative;
+  margin-top: 3%;
+}
+
+/* Styling for the shop video in the features section */
+.section-features__shop-video {
+  position: absolute;
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Styling for the text overlay in the features section */
+.section-features__shop-video-text-overlay {
+  display: flex;
+  height: 75vh;
+  align-items: flex-end;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Styling for h3 elements in the text overlay of the features section */
+.section-features__shop-video-text-overlay h3 {
+  background: #000 none repeat scroll 0 0;
+  color: #fff;
+  mix-blend-mode: overlay;
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* Styling for the button wrapper in the shopping section */
+.section-shopping__button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 50px;
+}
+
+/* Styling for links within the button wrapper in the shopping section */
+.section-shopping__button-wrapper a {
+  color: #222;
+  background-color: #fff;
+  font-size: 2.6rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  mix-blend-mode: lighten;
+}
+
+/* Styling for links within the detail header of the custom suit (hidden) */
+.section-custom-suit__detail-header a {
+  display: none;
+}
+
+/* Styling for paragraphs within the detail services section of the custom suit */
+.section-custom-suit__detail-services p {
+  margin: 8%;
+}
+
+/* Styling for h2 elements within the detail services section of the custom suit */
+.section-custom-suit__detail-services h2 {
+  margin: 0 8%;
+}
+
+/* Styling for the form container */
+.form-container {
+  margin: auto;
+  background-color: #ccc5b9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10%;
+}
+
+/* Styling for the form container */
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for labels within the form container */
+.form-container label {
+  margin-bottom: 8px;
+  color: #252422;
+}
+
+/* Styling for input, select, and textarea within the form container */
+.form-container input,
+select,
+textarea {
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #252422;
+  border-radius: 4px;
+  background-color: #fffcf2;
+  width: 100%;
+  margin: 8px 0px 16px 0px;
+}
+
+/* Styling for the select element within the form container */
+select {
+  text-transform: uppercase;
+}
+
+/* Styling for the button within the form container */
+.form-container button {
+  padding: 12px 36px;
+  background-color: #ff8000;
+  color: #fffcf2;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 2rem;
+  border: none;
+}
+
+/* Styling for the button on hover within the form container */
+.form-container button:hover {
+  background-color: #eb5e28;
+  font-size: 2.3rem;
+  padding: 13px 36px;
+}
+
+/* Styling for h1 elements in the shopping info section */
+.section-shopping__info h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+/* Styling for images and spans within the form container measurements section */
+.form-container__measurements img {
+  width: 100%;
+  height: 500px;
+}
+
+.form-container__measurements span {
+  background-color: black;
+  font-size: 2rem;
+  color: white;
+  border-radius: 50%;
+  padding: 9px;
+  left: 12px;
+  position: relative;
+  left: -27px;
+  top: 13px;
+}
+
+/* Styling for social icons within the footer address */
+.footer-address__social-icons a {
+  color: #222;
+}
+
+/* Media query for screens with a minimum width of 1200px */
+@media only screen and (min-width: 1200px) {
+  /* Styling for navigation menu */
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Styling for the toggle element */
+  nav .toggle {
+    display: none;
+  }
+
+  /* Styling for h1 elements */
+  h1 {
+    font-weight: 400;
+  }
+
+  /* Styling for h3 elements in the hero section */
+  .section-hero h3 {
+    width: 1070px;
+    margin: 5% auto;
+    line-height: 3rem;
+  }
+
+  /* Styling for navigation wrapper */
+  .nav-wrapper {
+    flex-flow: row-reverse;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 30px;
+    align-items: center;
+  }
+
+  /* Styling for the hero header section */
+  .section-hero__header {
+    background-attachment: fixed;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-left: 10%;
+  }
+
+  /* Styling for h1 elements in the hero header */
+  .section-hero__header h1 {
+    max-width: 35%;
+    font-size: 8rem;
+  }
+
+  /* Styling for p elements in the hero header */
+  .section-hero__header p {
+    max-width: 25%;
+  }
+
+  /* Styling for navigation ul */
+  nav ul {
+    display: flex;
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Styling for navigation links */
+  nav a {
+    margin-right: 40px;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  /* Styling for header images */
+  header img {
+    width: 100px;
+  }
+
+  /* Styling for the header */
+  header {
+    background-color: #222;
+    color: #fff;
+    align-items: center;
+    padding: 0px;
+    padding: 0 10%;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+  }
+
+  /* Styling for the main content area */
+  main {
+    padding-top: 60px;
+  }
+
+  /* Styling for h1 elements in the custom suit detail header */
+  .section-custom-suit__detail-header h1 {
+    margin: 0;
+    font-size: 8rem;
+    max-width: 40%;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+    border: none;
+    color: #222;
+  }
+
+  /* Styling for the history div in the call to action section */
+  .section-call_to_action__div-history {
+    display: flex;
+    align-items: center;
+    max-width: 1070px;
+    margin: 0 auto;
+  }
+
+  /* Styling for images within the history div */
+  .section-call_to_action__div-history img {
+    width: 450px;
+  }
+
+  /* Styling for links within the custom suit detail header */
+  .section-custom-suit__detail-header a {
+    display: inline-block;
+    color: #222;
+    background-color: #fff;
+    font-size: 3rem;
+    max-width: 40%;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  /* Styling for the custom suit detail header */
+  .section-custom-suit__detail-header {
+    padding: 0;
+    margin: 0 auto;
+    background-attachment: fixed;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 10%;
+  }
+  /* Styling for the product wrapper section */
+  .section-product__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1070px;
+    margin: 0 auto;
+  }
+
+  /* Styling for the brand section */
+  .section-brand {
+    width: 1070px;
+    margin: 5% auto;
+  }
+
+  /* Styling for article elements */
+  article {
+    flex-basis: 20%; /* 25% width with 20px spacing */
+  }
+
+  /* Styling for product section images */
+  .section-product img {
+    height: 250px;
+  }
+
+  /* Styling for brand section images */
+  .section-brand__img-wrapper img {
+    width: 20%;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+  }
+
+  /* Styling for brand section images on hover */
+  .section-brand__img-wrapper img:hover {
+    transform: rotateY(360deg);
+  }
+
+  /* Styling for call to action textarea paragraph */
+  .section-call_to_action__textarea p {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 3rem;
+    margin-top: 10%;
+  }
+
+  /* Styling for iframes */
+  iframe {
+    border: 4px solid #ff8000 !important;
+    border-radius: 10px;
+    display: block;
+    height: 40vh;
+  }
+
+  /* Styling for custom suit detail services unordered list */
+  .section-custom-suit__detail-services ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Styling for custom suit detail services list items */
+  .section-custom-suit__detail-services li {
+    width: 48%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0;
+    margin-top: 2%;
+  }
+
+  /* Styling for custom suit detail services section */
+  .section-custom-suit__detail-services {
+    width: 1070px;
+    margin: 0 auto;
+  }
+
+  /* Styling for mobile shopping video section */
+  #section-shopping__mobile-video {
+    display: none;
+  }
+
+  /* Styling for desktop shopping video section */
+  #section-shopping__desktop-video {
+    display: block;
+  }
+
+  /* Styling for shop video text overlay section */
+  .section-shopping__shop-video-text-overlay {
+    margin: 0;
+  }
+
+  /* Styling for shopping info h1 element */
+  .section-shopping__info h1 {
+    text-transform: uppercase;
+    font-size: 8rem;
+    font-family: "Roboto Mono", monospace;
+  }
+
+  /* Styling for shopping info paragraph */
+  .section-shopping__info h3 {
+    width: 1070px;
+    margin: 8% auto;
+    padding: 3%;
+  }
+
+  /* Styling for footer address wrapper section */
+  .footer-address__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /* Styling for footer address social icons */
+  .footer-address__social-icons {
+    margin-top: 5%;
+  }
+
+  /* Styling for form container section */
+  .form-container {
+    width: 1070px;
+    padding: 3%;
+  }
+
+  /* Styling for form container measurements section */
+  .form-container__measurements {
+    display: flex;
+    gap: 50px;
+  }
+
+  /* Styling for table */
+  table {
+    width: 1070px;
+  }
+
+  /* Styling for custom suit detail services h2 element */
+  .section-custom-suit__detail-services h2 {
+    margin: 0;
+  }
+
+  /* Styling for features shop video text overlay section */
+  .section-features__shop-video-text-overlay {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Styling for shopping button wrapper section */
+  .section-shopping__button-wrapper {
+    width: 60%;
+  }
+
+  /* Styling for features shop video text overlay h3 element */
+  .section-features__shop-video-text-overlay h3 {
+    margin: 3% auto;
+    font-size: 5rem;
+  }
+
+  /* Styling for features shop video text overlay links */
+  .section-features__shop-video-text-overlay a {
+    font-size: 4rem;
+  }
+
+  /* Styling for features shop video text overlay links on hover */
+  .section-features__shop-video-text-overlay a:hover {
+    background-color: #ff8001;
+    mix-blend-mode: normal;
+  }
+}

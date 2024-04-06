@@ -1,0 +1,254 @@
+<!-- DGL 103 CVS1 - Sumit Joshi - Project -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    >
+    <script>
+      function showNav() {
+        let navElement = document.getElementById("nav-items");
+        navElement.classList.toggle("show-items");
+      }
+
+      function scrollToSection(sectionId) {
+        const targetElement = document.getElementById(
+          "section-product-list"
+        );
+
+        window.scrollTo({
+          top:
+            targetElement.offsetTop -
+            document.querySelector("nav").offsetHeight,
+          behavior: "smooth",
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <a href="./index.html"><img src="images/logo.png" alt="Logo img" ></a>
+      <!-- Navigation Menu -->
+      <div class="nav-wrapper">
+        <nav>
+          <a class="toggle" onclick="showNav()"
+            ><i class="fa fa-bars" aria-hidden="true"></i
+          ></a>
+          <ul id="nav-items">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./custom-suit.html">Custom Suit</a></li>
+            <li><a href="./personal-shopping.html">Personal Shopping</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="section-hero__header">
+          <h1>Jim’s online store</h1>
+
+          <p onclick="scrollToSection()">Fashion Finds a Home – Yours!</p>
+        </div>
+        <h3>
+          Discover the essence of style at Jim's store – where trendsetting
+          fashion meets comfort. Make a statement with our diverse collection;
+          shop now and embrace your unique individuality! →
+        </h3>
+      </section>
+      <section class="section-product">
+        <h2>shop big & tall</h2>
+        <div id="section-product-list" class="section-product__wrapper">
+          <article>
+            <img src="images/product_01.jpeg" alt="Product Image " >
+            <h5>
+              MY'S Men's 3 Piece Slim Fit Suit, One Button Jacket Blazer Vest
+              Pants Set and Tie
+            </h5>
+            <p class="section-product__para-price">$79.99</p>
+          </article>
+          <article>
+            <img src="images/product_02.jpg" alt="Product Image " >
+            <h5>
+              MAGE MALE Men's 3 Pieces Suit Elegant Solid One Button Slim Fit
+              Single Breasted
+            </h5>
+            <p class="section-product__para-price">$99.99</p>
+          </article>
+          <article>
+            <img src="images/product_03.jpg" alt="Product Image " >
+            <h5>DKNY Men's Modern Fit High Performance Suit Separates</h5>
+            <p class="section-product__para-price">$99.99</p>
+          </article>
+          <article>
+            <img src="images/product_04.jpg" alt="Product Image " >
+            <h5>
+              Haggar Men's Premium Stretch Classic Fit Suit Separates-Pants &
+              Jackets
+            </h5>
+            <p class="section-product__para-price">$55.99</p>
+          </article>
+          <article>
+            <img src="images/product_05.jpg" alt="Product Image " >
+            <h5>Runcati Men's 2 Piece Suits Slim Fit Double Breasted</h5>
+            <p class="section-product__para-price">$89.99</p>
+          </article>
+          <article>
+            <img src="images/product_06.jpg" alt="Product Image " >
+            <h5>Calvin Klein Men's Slim Fit Suit Separates</h5>
+            <p class="section-product__para-price">$99.99</p>
+          </article>
+          <article>
+            <img src="images/product_07.jpg" alt="Product Image " >
+            <h5>
+              P&L Men's Premium Wool Blend Business Blazer Dress Suit Jacket
+            </h5>
+            <p class="section-product__para-price">$99.99</p>
+          </article>
+          <article>
+            <img src="images/product_08.jpg" alt="Product Image " >
+            <h5>WULFUL Men’s Slim Fit Suit One Button 3-Piece Blazer Dress</h5>
+            <p class="section-product__para-price">$99.99</p>
+          </article>
+        </div>
+        <a class="section-product__load-more">Load More</a>
+      </section>
+
+      <section class="section-brand">
+        <h2>trending brands</h2>
+        <div class="section-brand__img-wrapper">
+          <img src="images/logo_01.avif" alt="Logo one for brand" >
+          <img src="images/logo_02.avif" alt="Logo two  for brand" >
+          <img src="images/logo_03.avif" alt="Logo three for brand" >
+          <img src="images/logo_04.avif" alt="Logo four for brand" >
+          <img src="images/logo_05.webp" alt="Logo five for brand" >
+          <img src="images/logo_06.avif" alt="Logo six for brand" >
+        </div>
+      </section>
+
+      <section class="section-call_to_action">
+        <div class="section-call_to_action__textarea">
+          <h2>Craft Your Signature Style</h2>
+          <p>
+            We strive to provide high quality products in a relaxed atmosphere
+            and with help from knowledgeable staff, we make shopping EASY again.
+          </p>
+        </div>
+        <div class="section-call_to_action__Button-wrapper">
+          <a href="./custom-suit.html">Custom Suit</a>
+          <a href="./personal-shopping.html">Personal Shopping </a>
+        </div>
+      </section>
+      <section class="section-call_to_action__div-history">
+        <h2>50 Years of Understanding Men's Style and Shopping Preferences</h2>
+        <img src="images/Jims-50yrs-Final.png" alt="50 year logo image" >
+        <h2>
+          The reason for our success is that we understand men and how they like
+          to shop.
+        </h2>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-address-outer">
+        <div class="footer-address__wrapper">
+          <div class="footer-address">
+            <h3>jim's courtenay</h3>
+            <p>
+              219 5th Street,<br >
+              Courtenay, BC V9N 1J6, <br >(Downtown Courtenay) <br >Phone:
+              250-338-2624
+            </p>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.244511693526!2d-125.24315089999999!3d50.025514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5462af22b7594d0b%3A0xd6d54d42885101d!2s982%20Shoppers%20Row%2C%20Campbell%20River%2C%20BC%20V9W%202C5!5e0!3m2!1sen!2sca!4v1701148782782!5m2!1sen!2sca"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="footer-address__wrapper">
+          <div class="footer-address">
+            <h3>jim's campbell river</h3>
+            <p>
+              982 Shoppers Row,<br >
+              Campbell River, BC V9W 2C5 <br >(NEW LOCATION) <br >Phone:
+              778-346-3332
+            </p>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.244511693526!2d-125.24315089999999!3d50.025514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5462af22b7594d0b%3A0xd6d54d42885101d!2s982%20Shoppers%20Row%2C%20Campbell%20River%2C%20BC%20V9W%202C5!5e0!3m2!1sen!2sca!4v1701338031270!5m2!1sen!2sca"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="footer-address__wrapper">
+          <div class="footer-address">
+            <h3>jim's prince george</h3>
+            <p>
+              1237 4th Avenue, <br >
+              Prince George, BC V2L 3J5 <br >(Downtown Courtenay) <br >Phone:
+              236-423-0961
+            </p>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.892598688138!2d-122.7457697!3d53.9158844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x538898e447ed4a57%3A0xf5a21a7b19756ac!2s1237%204th%20Ave%2C%20Prince%20George%2C%20BC%20V2L%203J5!5e0!3m2!1sen!2sca!4v1701338226447!5m2!1sen!2sca"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="footer-address__wrapper">
+          <div class="footer-address">
+            <h3>jim's campbell river</h3>
+            <p>
+              982 Shoppers Row,<br >
+              Campbell River, BC V9W 2C5 <br >(NEW LOCATION) <br >Phone:
+              778-346-3332
+            </p>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.244511693526!2d-125.24315089999999!3d50.025514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5462af22b7594d0b%3A0xd6d54d42885101d!2s982%20Shoppers%20Row%2C%20Campbell%20River%2C%20BC%20V9W%202C5!5e0!3m2!1sen!2sca!4v1701338031270!5m2!1sen!2sca"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <p class="footer-address__copyright">
+        This is a fictional website that was designed and coded as an
+        educational exercise. It is not intended to be seen outside of the class
+        environment. None of the content and images were approved by the
+        business owner.
+      </p>
+    </footer>
+  </body>
+</html>
