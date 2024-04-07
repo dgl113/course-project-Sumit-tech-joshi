@@ -125,6 +125,9 @@ const product = [
 // Add an event listener to execute the code when the DOM content is loaded
 addEventListener("DOMContentLoaded", (event) => {
 
+    const productList = document.getElementById("section-product-list");
+    // Add a CSS class to the productList element
+    productList.classList.add("section-product-list");
   // Get the search input element
   const searchInput = document.getElementById("searchInput");
   showProduct(product);
@@ -156,8 +159,6 @@ addEventListener("DOMContentLoaded", (event) => {
   // Add event listener for the input field to trigger filtering on input change
   searchInput.addEventListener("input", filterProducts);
 });
-
-
 
 // Load more functionality
 function loadmore (loadMoreCheck) {
