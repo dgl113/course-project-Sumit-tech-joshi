@@ -419,11 +419,6 @@ section.table-container h2 {
   text-align: center;
 }
 
-/* Styling for the product section */
-.section-product {
-  text-align: center;
-}
-
 /* Styling for the video container in the shopping section */
 .section-shopping__video-container {
   width: 100%;
@@ -746,6 +741,20 @@ select {
 /* Styling for social icons within the footer address */
 .footer-address__social-icons a {
   color: #222;
+}
+
+.load-more-secton {
+  text-align: center;
+}
+.product-title {
+  width: 1070px;
+  margin: 0 auto;
+}
+
+.product-search {
+  height: 31px;
+  width: 200px;
+  margin-top: 16px;
 }
 
 /* Media query for screens with a minimum width of 1200px */

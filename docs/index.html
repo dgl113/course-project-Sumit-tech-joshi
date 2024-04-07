@@ -2,25 +2,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="style.css" >
-    <link rel="preconnect" href="https://fonts.googleapis.com" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
       rel="stylesheet"
-    >
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Ubuntu:wght@400;500&display=swap"
       rel="stylesheet"
-    >
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    >
-    <script src="app.js"> </script>
+    />
+    <script src="app.js"></script>
     <script>
       function showNav() {
         let navElement = document.getElementById("nav-items");
@@ -28,9 +28,7 @@
       }
 
       function scrollToSection(sectionId) {
-        const targetElement = document.getElementById(
-          "section-product-list"
-        );
+        const targetElement = document.getElementById("section-product-list");
 
         window.scrollTo({
           top:
@@ -44,7 +42,7 @@
   <body>
     <!-- Header Section -->
     <header>
-      <a href="./index.html"><img src="images/logo.png" alt="Logo img" ></a>
+      <a href="./index.html"><img src="images/logo.png" alt="Logo img" /></a>
       <!-- Navigation Menu -->
       <div class="nav-wrapper">
         <nav>
@@ -73,22 +71,31 @@
         </h3>
       </section>
       <section class="section-product">
-        <h2>shop big & tall</h2>
-        <div id="section-product-list" class="section-product__wrapper">
-  
+        <div class="product-title">
+          <h2>shop big & tall</h2>
+          <input
+            class="product-search"
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+          />
         </div>
-        <a class="section-product__load-more">Load More</a>
+
+        <div id="section-product-list" class="section-product__wrapper"></div>
+        <div class="load-more-secton">
+          <a class="section-product__load-more">Load More</a>
+        </div>
       </section>
 
       <section class="section-brand">
         <h2>trending brands</h2>
         <div class="section-brand__img-wrapper">
-          <img src="images/logo_01.avif" alt="Logo one for brand" >
-          <img src="images/logo_02.avif" alt="Logo two  for brand" >
-          <img src="images/logo_03.avif" alt="Logo three for brand" >
-          <img src="images/logo_04.avif" alt="Logo four for brand" >
-          <img src="images/logo_05.webp" alt="Logo five for brand" >
-          <img src="images/logo_06.avif" alt="Logo six for brand" >
+          <img src="images/logo_01.avif" alt="Logo one for brand" />
+          <img src="images/logo_02.avif" alt="Logo two  for brand" />
+          <img src="images/logo_03.avif" alt="Logo three for brand" />
+          <img src="images/logo_04.avif" alt="Logo four for brand" />
+          <img src="images/logo_05.webp" alt="Logo five for brand" />
+          <img src="images/logo_06.avif" alt="Logo six for brand" />
         </div>
       </section>
 
@@ -107,7 +114,7 @@
       </section>
       <section class="section-call_to_action__div-history">
         <h2>50 Years of Understanding Men's Style and Shopping Preferences</h2>
-        <img src="images/Jims-50yrs-Final.png" alt="50 year logo image" >
+        <img src="images/Jims-50yrs-Final.png" alt="50 year logo image" />
         <h2>
           The reason for our success is that we understand men and how they like
           to shop.
@@ -120,8 +127,8 @@
           <div class="footer-address">
             <h3>jim's courtenay</h3>
             <p>
-              219 5th Street,<br >
-              Courtenay, BC V9N 1J6, <br >(Downtown Courtenay) <br >Phone:
+              219 5th Street,<br />
+              Courtenay, BC V9N 1J6, <br />(Downtown Courtenay) <br />Phone:
               250-338-2624
             </p>
           </div>
@@ -139,8 +146,8 @@
           <div class="footer-address">
             <h3>jim's campbell river</h3>
             <p>
-              982 Shoppers Row,<br >
-              Campbell River, BC V9W 2C5 <br >(NEW LOCATION) <br >Phone:
+              982 Shoppers Row,<br />
+              Campbell River, BC V9W 2C5 <br />(NEW LOCATION) <br />Phone:
               778-346-3332
             </p>
           </div>
@@ -158,8 +165,8 @@
           <div class="footer-address">
             <h3>jim's prince george</h3>
             <p>
-              1237 4th Avenue, <br >
-              Prince George, BC V2L 3J5 <br >(Downtown Courtenay) <br >Phone:
+              1237 4th Avenue, <br />
+              Prince George, BC V2L 3J5 <br />(Downtown Courtenay) <br />Phone:
               236-423-0961
             </p>
           </div>
@@ -177,8 +184,8 @@
           <div class="footer-address">
             <h3>jim's campbell river</h3>
             <p>
-              982 Shoppers Row,<br >
-              Campbell River, BC V9W 2C5 <br >(NEW LOCATION) <br >Phone:
+              982 Shoppers Row,<br />
+              Campbell River, BC V9W 2C5 <br />(NEW LOCATION) <br />Phone:
               778-346-3332
             </p>
           </div>
