@@ -163,8 +163,8 @@ nav a:hover {
 }
 
 /* Styling for login link */
-.login-link {
-  display: none;
+.display-none{
+  display: none !important;
 }
 
 /* Styling for items in a list */

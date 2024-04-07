@@ -46,6 +46,16 @@ const product = [
     price: "$79.99",
   },
   {
+    image: "images/product_01.jpeg",
+    name: "Classic Black Suit",
+    price: "$79.99",
+  },
+  {
+    image: "images/product_02.jpg",
+    name: "Elegant Navy Blue Suit",
+    price: "$99.99",
+  },
+  {
     image: "images/product_10.jpg",
     name: "Formal Pinstripe Suit",
     price: "$99.99",
@@ -100,32 +110,24 @@ const product = [
     name: "Tailored Wool Tuxedo",
     price: "$129.99",
   },
+  {
+    image: "images/product_01.jpeg",
+    name: "Classic Black Suit",
+    price: "$79.99",
+  },
+  {
+    image: "images/product_02.jpg",
+    name: "Elegant Navy Blue Suit",
+    price: "$99.99",
+  },
 ];
 
 // Add an event listener to execute the code when the DOM content is loaded
 addEventListener("DOMContentLoaded", (event) => {
-  // Get the section-product-list element
-  const productList = document.getElementById("section-product-list");
-  // Add a CSS class to the productList element
-  productList.classList.add("section-product-list");
-
-  // Iterate over each product in the product array
-  product.forEach((product) => {
-    // Create a new article element for each product
-    const article = document.createElement("article");
-    // Set the inner HTML of the article element with product information
-    article.innerHTML = `
-            <img src="${product.image}" alt="Product Image">
-            <h5>${product.name}</h5>
-            <p class="section-product__para-price">${product.price}</p>
-        `;
-    // Append the article element to the productList
-    productList.appendChild(article);
-  });
 
   // Get the search input element
   const searchInput = document.getElementById("searchInput");
-
+  showProduct(product);
   // Function to filter products based on search input
   function filterProducts() {
     const searchText = searchInput.value.toLowerCase();
@@ -154,3 +156,43 @@ addEventListener("DOMContentLoaded", (event) => {
   // Add event listener for the input field to trigger filtering on input change
   searchInput.addEventListener("input", filterProducts);
 });
+
+
+
+// Load more functionality
+function loadmore (loadMoreCheck) {
+    let loadMoreItem = document.getElementById("load-more");
+    let loadLessItem = document.getElementById("load-less");
+
+    loadMoreItem.classList.toggle("display-none");
+    loadLessItem.classList.toggle("display-none");
+    
+    if (loadMoreCheck) {
+        showProduct(product);
+    }
+    else {
+        showProduct(product.slice(0, 12));
+    }
+}
+
+function showProduct(productListItem) {
+  // Get the section-product-list element
+  const productList = document.getElementById("section-product-list");
+  // Add a CSS class to the productList element
+  productList.classList.add("section-product-list");
+
+  // Iterate over each product in the product array
+  productListItem.slice(0, 12).forEach((product) => {
+    // Create a new article element for each product
+    const article = document.createElement("article");
+    // Set the inner HTML of the article element with product information
+    article.innerHTML = `
+            <img src="${product.image}" alt="Product Image">
+            <h5>${product.name}</h5>
+            <p class="section-product__para-price">${product.price}</p>
+        `;
+    // Append the article element to the productList
+    productList.appendChild(article);
+  });
+
+}
