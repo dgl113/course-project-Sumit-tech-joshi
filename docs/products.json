@@ -1,0 +1,43 @@
+[
+    {
+      "image": "images/product_01.jpeg",
+      "name": "MY'S Men's 3 Piece Slim Fit Suit, One Button Jacket Blazer Vest Pants Set and Tie",
+      "price": "$79.99"
+    },
+    {
+      "image": "images/product_02.jpg",
+      "name": "MAGE MALE Men's 3 Pieces Suit Elegant Solid One Button Slim Fit Single Breasted",
+      "price": "$99.99"
+    },
+    {
+      "image": "images/product_03.jpg",
+      "name": "DKNY Men's Modern Fit High Performance Suit Separates",
+      "price": "$99.99"
+    },
+    {
+      "image": "images/product_04.jpg",
+      "name": "Haggar Men's Premium Stretch Classic Fit Suit Separates-Pants & Jackets",
+      "price": "$55.99"
+    },
+    {
+      "image": "images/product_05.jpg",
+      "name": "Runcati Men's 2 Piece Suits Slim Fit Double Breasted",
+      "price": "$89.99"
+    },
+    {
+      "image": "images/product_06.jpg",
+      "name": "Calvin Klein Men's Slim Fit Suit Separates",
+      "price": "$99.99"
+    },
+    {
+      "image": "images/product_07.jpg",
+      "name": "P&L Men's Premium Wool Blend Business Blazer Dress Suit Jacket",
+      "price": "$99.99"
+    },
+    {
+      "image": "images/product_08.jpg",
+      "name": "WULFUL Men’s Slim Fit Suit One Button 3-Piece Blazer Dress",
+      "price": "$99.99"
+    }
+  ]
+  
