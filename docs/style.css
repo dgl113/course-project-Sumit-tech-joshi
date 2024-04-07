@@ -693,6 +693,11 @@ select {
   text-transform: uppercase;
 }
 
+.iframe-wrapper {
+  background-color: #ccc5b9;
+  height: 100vh;
+}
+
 /* Styling for the button within the form container */
 .form-container button {
   padding: 12px 36px;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="./app.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
       rel="stylesheet"
@@ -16,41 +17,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script>
-      function showNav() {
-        let navElement = document.getElementById("nav-items");
-        navElement.classList.toggle("show-items");
-      }
-    </script>
-        <style>
-          /* Custom CSS styles for the form */
-          .embedded-google-form input[type="text"],
-          .embedded-google-form textarea {
-              /* Example styles */
-              width: 100%;
-              padding: 10px;
-              margin: 5px 0;
-              border: 1px solid #ccc;
-              border-radius: 4px;
-              box-sizing: border-box;
-              background-color: #fffcf2; /* Background color for text inputs and textareas */
-          }
-          
-          .embedded-google-form input[type="submit"] {
-              /* Example styles */
-              background-color: #ff8000; /* Background color for submit button */
-              color: white;
-              padding: 12px 20px;
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
-          }
-          
-          .embedded-google-form input[type="submit"]:hover {
-              /* Example styles */
-              background-color: #e67300; /* Darker shade on hover */
-          }
-      </style>
   </head>
   <body>
     <!-- Header Section -->
@@ -117,35 +83,16 @@
       <section class="form-container embedded-google-form">
         <h2>appointment form</h2>
 
-        <form action="#" method="post">
-          <label>Your Name (required)</label>
-          <input type="text" required />
-
-          <label>Phone Number (required)</label>
-          <input type="tel" required />
-
-          <label>Your Email (required)</label>
-          <input type="email" required />
-
-          <label>Jim’s Store Location (required)</label>
-          <select required>
-            <option value="" selected>jim's couetenay</option>
-            <option value="campbell river">jim's campbell river</option>
-            <option value="dunkan">jim's dunkan</option>
-            <option value="george">jim's prince george</option>
-          </select>
-
-          <label>Preferred Appointment Date:</label>
-          <input type="date" required />
-
-          <label>Preferred Appointment Time:</label>
-          <input type="time" required />
-
-          <label for="message">Your Message</label>
-          <textarea id="message" name="message" rows="4"></textarea>
-
-          <button type="submit">Submit</button>
-        </form>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSe7KqPB0fTInq76_babiSg9LZrKnAaZ7vPd7inHxmyJ2Q5fPg/viewform?embedded=true"
+          width="1000"
+          height="4000"
+          class="iframe-wrapper"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          >Loading…</iframe
+        >
       </section>
 
       <section class="section-features">
