@@ -232,3 +232,24 @@ function closeModal() {
 
   modal.style.display = "none";
 }
+
+
+// Function to toggle visibility of navigation items
+function showNav() {
+    // Get the navigation element by its ID
+    let navElement = document.getElementById("nav-items");
+    // Toggle the "show-items" class to control visibility
+    navElement.classList.toggle("show-items");
+}
+
+// Function to scroll to a specific section
+function scrollToSection() {
+    // Get the target section element by its ID
+    const targetElement = document.getElementById("section-product-list");
+    
+    // Scroll smoothly to the target section, considering the height of the navigation bar
+    window.scrollTo({
+        top: targetElement.offsetTop - document.querySelector("nav").offsetHeight,
+        behavior: "smooth",
+    });
+}
