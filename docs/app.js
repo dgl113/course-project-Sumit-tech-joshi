@@ -128,12 +128,13 @@ const product = [
 addEventListener("DOMContentLoaded", (event) => {
   const productList = document.getElementById("section-product-list");
   // Add a CSS class to the productList element
+  debugger;
   productList &&
     productList.classList &&
     productList.classList.add("section-product-list");
   // Get the search input element
   const searchInput = document.getElementById("searchInput");
-  showProduct(product);
+  showProduct(product.slice(0, 8));
   // Function to filter products based on search input
   function filterProducts() {
     const searchText = searchInput && searchInput.value.toLowerCase();
@@ -156,9 +157,6 @@ addEventListener("DOMContentLoaded", (event) => {
     });
   }
 
-  // Initial call to filter products when the page loads
-  filterProducts();
-
   // Add event listener for the input field to trigger filtering on input change
   searchInput.addEventListener("input", filterProducts);
 });
@@ -174,7 +172,7 @@ function loadmore(loadMoreCheck) {
   if (loadMoreCheck) {
     showProduct(product);
   } else {
-    showProduct(product.slice(0, 12));
+    showProduct(product.slice(0, 8));
   }
 }
 
@@ -186,8 +184,11 @@ function showProduct(productListItem) {
     productList.classList &&
     productList.classList.add("section-product-list");
 
+  // Set intial content to blank for showing product
+  productList.innerHTML = "";
+
   // Iterate over each product in the product array
-  productListItem.slice(0, 12).forEach((product) => {
+  productListItem.forEach((product) => {
     // Create a new article element for each product
     const article = document.createElement("article");
     // Set the inner HTML of the article element with product information
