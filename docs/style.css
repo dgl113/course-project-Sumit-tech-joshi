@@ -767,7 +767,7 @@ select {
   width: 50%;
   height: 100%;
   overflow: auto;
-  background-color: var(#000);
+  background-color: #0000;
 }
 
 /* Modal content */
