@@ -1,7 +1,9 @@
+// <!-- DGL 103 CVS1 - Sumit Joshi - Project -->
+
 // Define the product data
 const product = [
   {
-    image: "images/product_01.jpeg",
+    image: "images/product_01.jpg",
     name: "Classic Black Suit",
     price: "$79.99",
   },
@@ -46,27 +48,27 @@ const product = [
     price: "$79.99",
   },
   {
-    image: "images/product_01.jpeg",
+    image: "images/product_10.jpg",
     name: "Classic Black Suit",
     price: "$79.99",
   },
   {
-    image: "images/product_02.jpg",
+    image: "images/product_11.jpg",
     name: "Elegant Navy Blue Suit",
     price: "$99.99",
   },
   {
-    image: "images/product_10.jpg",
+    image: "images/product_12.jpg",
     name: "Formal Pinstripe Suit",
     price: "$99.99",
   },
   {
-    image: "images/product_11.jpg",
+    image: "images/product_05.jpg",
     name: "Slim Fit Tweed Suit",
     price: "$89.99",
   },
   {
-    image: "images/product_12.jpg",
+    image: "images/product_06.jpg",
     name: "Casual Linen Blazer",
     price: "$69.99",
   },
@@ -111,7 +113,7 @@ const product = [
     price: "$129.99",
   },
   {
-    image: "images/product_01.jpeg",
+    image: "images/product_01.jpg",
     name: "Classic Black Suit",
     price: "$79.99",
   },
@@ -124,16 +126,17 @@ const product = [
 
 // Add an event listener to execute the code when the DOM content is loaded
 addEventListener("DOMContentLoaded", (event) => {
-
-    const productList = document.getElementById("section-product-list");
-    // Add a CSS class to the productList element
+  const productList = document.getElementById("section-product-list");
+  // Add a CSS class to the productList element
+  productList &&
+    productList.classList &&
     productList.classList.add("section-product-list");
   // Get the search input element
   const searchInput = document.getElementById("searchInput");
   showProduct(product);
   // Function to filter products based on search input
   function filterProducts() {
-    const searchText = searchInput.value.toLowerCase();
+    const searchText = searchInput && searchInput.value.toLowerCase();
     const filteredProducts = product.filter((product) => {
       return product.name.toLowerCase().includes(searchText);
     });
@@ -161,26 +164,27 @@ addEventListener("DOMContentLoaded", (event) => {
 });
 
 // Load more functionality
-function loadmore (loadMoreCheck) {
-    let loadMoreItem = document.getElementById("load-more");
-    let loadLessItem = document.getElementById("load-less");
+function loadmore(loadMoreCheck) {
+  let loadMoreItem = document.getElementById("load-more");
+  let loadLessItem = document.getElementById("load-less");
 
-    loadMoreItem.classList.toggle("display-none");
-    loadLessItem.classList.toggle("display-none");
-    
-    if (loadMoreCheck) {
-        showProduct(product);
-    }
-    else {
-        showProduct(product.slice(0, 12));
-    }
+  loadMoreItem.classList.toggle("display-none");
+  loadLessItem.classList.toggle("display-none");
+
+  if (loadMoreCheck) {
+    showProduct(product);
+  } else {
+    showProduct(product.slice(0, 12));
+  }
 }
 
 function showProduct(productListItem) {
   // Get the section-product-list element
   const productList = document.getElementById("section-product-list");
   // Add a CSS class to the productList element
-  productList.classList.add("section-product-list");
+  productList &&
+    productList.classList &&
+    productList.classList.add("section-product-list");
 
   // Iterate over each product in the product array
   productListItem.slice(0, 12).forEach((product) => {
@@ -193,7 +197,23 @@ function showProduct(productListItem) {
             <p class="section-product__para-price">${product.price}</p>
         `;
     // Append the article element to the productList
-    productList.appendChild(article);
+    productList && productList.appendChild(article);
   });
+}
 
+function openModal(imageNumber, description) {
+  let modal = document.getElementById("myModal");
+
+  let modalImage = document.getElementById("modal-img");
+  let modalDescription = document.getElementById("modal-description");
+  modalImage.src = `./images/product_${imageNumber}.jpg`;
+  modalDescription.innerText = description;
+  modal.style.display = "block";
+}
+
+// Function to close the modal
+function closeModal() {
+  let modal = document.getElementById("myModal");
+
+  modal.style.display = "none";
 }
