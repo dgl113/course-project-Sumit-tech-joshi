@@ -77,23 +77,32 @@
           <h2>
             Clients can take advantage of many options, including the following:
           </h2>
-          <ul>
+          <ul id="custom-suit-options">
             <!-- Custom suit options list -->
-            <li><span>1</span>Double breasted styles</li>
-            <li><span>2</span>Extra tall sizing</li>
-            <li>
+            <li onclick="openModal('01', 'Double breasted styles' )"><span>1</span>Double breasted styles</li>
+            <li onclick="openModal('02', 'Extra tall sizing' )"><span>2</span>Extra tall sizing</li>
+            <li onclick="openModal('03', `Surgeon’s cuffs Monogrammed initials, up to 4 letters` )">
               <span>3</span>Surgeon’s cuffs Monogrammed initials, up to 4
               letters
             </li>
-            <li><span>4</span>Monogrammed name, maximum 20 letters</li>
-            <li><span>5</span>Ticket pocket</li>
-            <li><span>6</span>Pic stitch</li>
-            <li><span>7</span>Button Choice</li>
-            <li><span>8</span>Lining Choice</li>
-            <li><span>9</span>Extra short sizing</li>
-            <li><span>10</span>Personal Label</li>
-            <li><span>11</span>Suspender buttons</li>
+            <li onclick="openModal('04', 'Monogrammed name, maximum 20 letters' )"><span>4</span>Monogrammed name, maximum 20 letters</li>
+            <li onclick="openModal('05', 'Ticket pocket' )"><span>5</span>Ticket pocket</li>
+            <li onclick="openModal('06', 'Pic stitch' )"><span>6</span>Pic stitch</li>
+            <li onclick="openModal('07', 'Button Choice' )"><span>7</span>Button Choice</li>
+            <li onclick="openModal('08', 'Lining Choice' )"><span>8</span>Lining Choice</li>
+            <li onclick="openModal('09', 'Extra short sizing' )"><span>9</span>Extra short sizing</li>
+            <li onclick="openModal('10', 'Personal Label' )"><span>10</span>Personal Label</li>
+            <li onclick="openModal('11', 'Suspender buttons' )"><span>11</span>Suspender buttons</li>
           </ul>
+          <div id="myModal" class="section-custom-suit__modal">
+            <div class="section-custom-suit__modal-content">
+              <span onclick="closeModal()" class="close">&times;</span>
+              <div>
+                <img id="modal-img" src="" alt="product image"/>
+                <p id="modal-description">description</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="table-container">
@@ -302,4 +311,6 @@
       </p>
     </footer>
   </body>
+  <script src="app.js"></script>
+
 </html>
