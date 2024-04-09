@@ -15,3 +15,7 @@ Integrate Google Forms to facilitate the scheduling of appointments for personal
 
 ### JSON Data Integration for Product Details:
 Utilize JSON data to dynamically showcase product details on the website. The JSON file will contain structured information such as title, description, image URL, and price for each product. By fetching and displaying this data dynamically, the website ensures real-time updates and efficient management of the product catalog.
+
+
+### Modal Integration for List Items with Dynamic Data
+it will have a list of products and feature items. Upon clicking on each list item, it will open a modal with the selected list's dynamic data, which will include functionality to open and close the modal.
