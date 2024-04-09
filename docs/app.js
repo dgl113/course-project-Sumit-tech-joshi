@@ -128,14 +128,16 @@ const product = [
 addEventListener("DOMContentLoaded", (event) => {
   const productList = document.getElementById("section-product-list");
   // Add a CSS class to the productList element
-  debugger;
   productList &&
     productList.classList &&
     productList.classList.add("section-product-list");
   // Get the search input element
   const searchInput = document.getElementById("searchInput");
   showProduct(product.slice(0, 8));
+
   // Function to filter products based on search input
+  // Parameters: None
+  // Return Value: None
   function filterProducts() {
     const searchText = searchInput && searchInput.value.toLowerCase();
     const filteredProducts = product.filter((product) => {
@@ -162,6 +164,9 @@ addEventListener("DOMContentLoaded", (event) => {
 });
 
 // Load more functionality
+// Parameters: 
+    // loadMoreCheck (Boolean) - Indicates whether to load more products or not
+// Return Value: None
 function loadmore(loadMoreCheck) {
   let loadMoreItem = document.getElementById("load-more");
   let loadLessItem = document.getElementById("load-less");
@@ -176,6 +181,9 @@ function loadmore(loadMoreCheck) {
   }
 }
 
+// Parameters: 
+    // productListItem (Array) - List of products to display
+// Return Value: None
 function showProduct(productListItem) {
   // Get the section-product-list element
   const productList = document.getElementById("section-product-list");
@@ -202,6 +210,10 @@ function showProduct(productListItem) {
   });
 }
 
+// Parameters: 
+    // imageNumber (Number) - The number of the image to display
+    // description (String) - The description of the product
+// Return Value: None
 function openModal(imageNumber, description) {
   let modal = document.getElementById("myModal");
 
@@ -213,6 +225,8 @@ function openModal(imageNumber, description) {
 }
 
 // Function to close the modal
+// Parameters: None
+// Return Value: None
 function closeModal() {
   let modal = document.getElementById("myModal");
 
